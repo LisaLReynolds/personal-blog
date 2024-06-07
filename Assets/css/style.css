@@ -50,6 +50,11 @@ input {
   padding: 50px;
 }
 
+.row {
+  display: flex;
+  justify-content: right;
+}
+
 #content {
   width: 100%;
 }
