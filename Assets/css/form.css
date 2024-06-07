@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(29, 128, 210);
+  background-color: rgb(16, 110, 187);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -66,7 +66,6 @@ input:checked + .slider:before {
 }
 
 .row {
-  margin: 20px;
   display: flex;
   justify-content: right;
 }
