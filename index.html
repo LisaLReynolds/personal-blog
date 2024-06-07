@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/css/styles.css" />
-    <script src="./Assets/"></script>
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
+    <!-- <script src="./Assets/"></script> -->
     <title>Document</title>
   </head>
   <body>
@@ -15,9 +15,36 @@
       </label> -->
     </header>
     <section>
-      <h1>My First Blog</h1>
-    
-      <form action=""></form>
+      <span class="intro">
+        <h1>My First Blog!</h1>
+      </span>
+      <span class="form">
+        <h2>what's on your mind?</h2>
+        <form action="/submit-form" method="post">
+          <label for="username">Username</label><br />
+          <input
+            type="text"
+            id="name"
+            username="username"
+            required
+          /><br /><br />
+
+          <label for="title">Title</label><br />
+          <input type="title" id="title" name="title" required /><br /><br />
+
+          <label for="content">Content</label><br />
+          <textarea
+            id="content"
+            name="content"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </span>
     </section>
   </body>
 </html>
