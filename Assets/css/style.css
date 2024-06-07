@@ -5,7 +5,6 @@ header {
   border-bottom: 5px solid black;
 }
 
-
 section {
   display: flex;
   flex-direction: row;
@@ -26,6 +25,14 @@ h1 {
   border-radius: 200px;
 }
 
+h2 {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+}
+
 .intro {
   flex: 0 0 600px;
   text-align: center;
@@ -40,3 +47,8 @@ h1 {
   margin-left: 2.5px;
   padding: 50px;
 }
+
+#content {
+  width: 100%;
+}
+
