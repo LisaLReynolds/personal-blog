@@ -1,0 +1,18 @@
+header {
+  height: 100px;
+  width: 100%;
+  border-bottom: 5px solid black;
+}
+
+h1 {
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.intro {
+    flex 0 0 500px;
+}
