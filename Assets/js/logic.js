@@ -25,10 +25,12 @@ document
     redirectToNewPage();
   });
 //event listener for submit button redirect to new page and store object
-//reset values??
+
 function redirectToNewPage() {
-  window.location.href = "blog.html";
+  window.location.href = "./blog.html";
 }
+//reset values??
+
 //In blog.js
 //second page
 //call function to get from storage object
