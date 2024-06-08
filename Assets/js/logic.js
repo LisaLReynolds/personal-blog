@@ -8,6 +8,7 @@ const submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener("click", function (event) {
   event.preventDefault(); //prevent default form submission
+  let entries = JSON.parse(localStorage.getItem("entries")) || [];
   //create object
   //username: declared value
   //title: declared value
@@ -18,9 +19,10 @@ submitButton.addEventListener("click", function (event) {
     blogContent: blogContent.value,
   };
 
+  entries.push(userInput);
   //store object in local storage as JSON stringify
   //save as array, push to array new entries
-  localStorage.setItem("userInput", JSON.stringify(userInput));
+  localStorage.setItem("entries", JSON.stringify(entries));
 
   redirectToNewPage();
 });
@@ -29,11 +31,3 @@ submitButton.addEventListener("click", function (event) {
 function redirectToNewPage() {
   window.location.href = "./blog.html";
 }
-//reset values??
-
-//In blog.js
-//second page
-//call function to get from storage object
-//parse JSON
-//render info
-//loop for all stored objects
