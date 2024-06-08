@@ -22,33 +22,40 @@
         </span>
         <span class="form">
           <h2>what's on your mind?</h2>
-          <form action="/submit-form" method="post">
+          <form action="submit.html">
             <label for="username">Username</label><br />
             <input
               type="text"
-              id="username"
-              username="username"
+              id="user-name"
+              name="userName"
               required
             /><br /><br />
 
             <label for="title">Title</label><br />
-            <input type="title" id="title" name="title" required /><br /><br />
+            <input
+              type="text"
+              id="blog-title"
+              name="blogTitle"
+              required
+            /><br /><br />
 
             <label for="content">Content</label><br />
             <textarea
-              id="content"
-              name="content"
+              id="blog-content"
+              name="blogContent"
               rows="8"
               cols="50"
               required
             ></textarea
             ><br /><br />
-
-            <input type="submit" value="Submit" />
+            <script src="./Assets/js/logic.js"></script>
+            <script src="./Assets/js/form.js"></script>
+            <input type="submit" value="Submit" id="submitButton" />
           </form>
         </span>
       </section>
     </div>
-    <script src="./Assets/js/form.js"></script>
   </body>
 </html>
+
+<!-- /submit-form" method="post" -->
