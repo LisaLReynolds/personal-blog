@@ -15,20 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
       const entryDiv = document.createElement("div");
       entryDiv.classList.add("entry");
 
-      const userName = document.createElement("h3");
-      userName.textContent = "Posted by: " + entry.userName;
-
       const blogTitle = document.createElement("h2");
       blogTitle.textContent = entry.blogTitle;
 
       const blogContent = document.createElement("p");
       blogContent.textContent = entry.blogContent;
 
+      const userName = document.createElement("h3");
+      userName.textContent = "Posted by: " + entry.userName;
+
+      // Create a delete button
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.addEventListener("click", function () {
+        // Remove the entry div when the delete button is clicked
+        entryDiv.remove();
+        // Update the local storage with the modified data
+        localStorage.setItem("entries", JSON.stringify(entries));
+      });
+
       // Append elements to the entry div
-      entryDiv.appendChild(userName);
       entryDiv.appendChild(blogTitle);
       entryDiv.appendChild(blogContent);
-
+      entryDiv.appendChild(userName);
+      entryDiv.appendChild(deleteButton);
       // Append the entry div to the document body
       const blogEntries = document.getElementById("blog-entries");
       blogEntries.appendChild(entryDiv);

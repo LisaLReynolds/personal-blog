@@ -14,12 +14,12 @@ button {
   align-items: center;
 }
 
-section {
+/* section {
   height: 500px;
   width: 100%;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-}
+} */
 
 footer {
   height: 150px;
@@ -41,4 +41,17 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.entry {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+#blog-entries {
+  overflow: auto;
+  height: 500px;
+  width: 100%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
 }
